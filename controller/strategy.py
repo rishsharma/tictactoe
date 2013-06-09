@@ -82,7 +82,7 @@ def CanWin(play_board, board_value):
     A position that will allow the user to win. -1 if the user cannot win yet.
   """
 
-  # Check if we can by examining the rows.
+  # Check if we can win by examining the rows.
   for row in xrange(play_board.dimension):
     num_set = play_board.IsRowPossible(row, board_value)
     if num_set == play_board.dimension - 1:
