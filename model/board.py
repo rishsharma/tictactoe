@@ -241,7 +241,7 @@ class Board(object):
       InvalidBoardPosition if the row, col is invalid.
     """
 
-    if 0 <= row <= self.dimension or 0 <= col <= self.dimension:
+    if 0 <= row < self.dimension or 0 <= col < self.dimension:
       return self._board[row][col]
     raise InvalidBoardPosition()
 
