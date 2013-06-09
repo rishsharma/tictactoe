@@ -28,7 +28,13 @@ def GetNextMove(play_board, board_value, strategy=Strategy.HEURISTICS):
 
   Returns:
     An absolute position for the next move that should be made.
+
+  Raises:
+    StrategyError if no move can be made.
   """
+
+  if play_board.IsFull():
+    raise StrategyError("Play board is full. No moves can be made.")
 
   # Can I win?
   position = CanWin(play_board, board_value)
@@ -57,13 +63,7 @@ def _RandomStrategy(play_board):
 
   Returns:
     An absolute position for the next move that should be made.
-
-  Raises:
-    StrategyError if no move can be made.
   """
-
-  if play_board.IsFull():
-    raise StrategyError("Play board is full. No moves can be made.")
 
   while 1:
     num = int(random.random() * play_board.dimension * play_board.dimension)
