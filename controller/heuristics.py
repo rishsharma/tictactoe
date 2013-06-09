@@ -110,7 +110,7 @@ def _GetRelativeColumnHeuristic(position, play_board, board_value):
   return 0
 
 
-def _GetDiagonalHeuristic(num, play_board, board_value):
+def _GetDiagonalHeuristic(position, play_board, board_value):
   """Returns a score of based on the position and the diagonals.
 
   The more and closer the same values are the better.
@@ -125,7 +125,7 @@ def _GetDiagonalHeuristic(num, play_board, board_value):
       play_board.IsAscendingDiagonalPossible(board_value) < 0):
     return Heuristic.INVALID
 
-  row, col = play_board.ToCoordinates(num)
+  row, col = play_board.ToCoordinates(position)
   if row != col and row != play_board.dimension - col - 1:
     return Heuristic.INVALID
 
