@@ -67,7 +67,7 @@ def _RandomStrategy(play_board):
 
   while 1:
     num = int(random.random() * play_board.dimension * play_board.dimension)
-    if play_board.IsValidMove(num):
+    if play_board.IsValidMoveFromPosition(num):
       return num
 
 
