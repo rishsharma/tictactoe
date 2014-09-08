@@ -1,6 +1,6 @@
 """Tests for board functionality."""
 
-__author__ = "rishisharma@gmail.com"
+__author__ = "rishsharma@gmail.com"
 
 
 import unittest
