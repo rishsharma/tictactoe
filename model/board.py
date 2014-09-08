@@ -1,6 +1,6 @@
 """Model that represents a Tic Tac Toe board."""
 
-__author__ = "Rishi Sharma (rishisharma@gmail.com)"
+__author__ = "Rishi Sharma (rishsharma@gmail.com)"
 
 
 class InvalidBoardSetting(Exception):
