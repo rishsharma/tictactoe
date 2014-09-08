@@ -1,6 +1,6 @@
 """Interaction module that interfaces with the user."""
 
-__author__ = "Rishi Sharma (rishisharma@gmail.com)"
+__author__ = "Rishi Sharma (rishsharma@gmail.com)"
 
 
 from i18n import string_resources
