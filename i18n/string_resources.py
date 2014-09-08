@@ -1,7 +1,7 @@
 """String resources for the tic tac toe game."""
 
 
-__author__ = "Rishi Sharma (rishisharma@gmail.com)"
+__author__ = "Rishi Sharma (rishsharma@gmail.com)"
 
 
 from model import board
