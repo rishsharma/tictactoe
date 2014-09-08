@@ -5,7 +5,7 @@ It is however modified from his approach in a few ways.  This approach
 should be more efficient based on optimizations made to the board.
 """
 
-__author__ = "Rishi Sharma (rishisharma@gmail.com)"
+__author__ = "Rishi Sharma (rishsharma@gmail.com)"
 
 
 from model import board
